@@ -1,0 +1,20 @@
+{
+  "name": "triangles",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "resizable": true,
+    "fullscreen": false,
+    "width": 1400,
+    "height": 1000
+  },
+  "dependencies": {},
+  "js-flags": "--harmony-collections",
+  "version": "0.0.0",
+  "description": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moorsiek (github.com/schyzoo) vestvud (github.com/vestvud)",
+  "license": "MIT"
+}

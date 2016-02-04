@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>graph_editor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/amazium.css">
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/layout.css">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="3rdparty/raphael-min.js"></script>
+<script type="text/javascript" src="3rdparty/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/triangle.js"></script>
+<script type="text/javascript" src="js/point.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+<script type="text/javascript" src="js/matrix.js"></script>
+<script type="text/javascript" src="js/selection.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+<script type="text/javascript" src="js/triangleDownload.js"></script>
+<script type="text/javascript" src="js/console.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script>
+</script>
+</head>
+<body>
+    <div class="row colorAntracit content">
+        <div class="content">
+            <div class="grid_3">
+                <ul>
+                    <li><a class="btn" href="#" id="newTriangle">Создать треугольник</a></li>
+                    <li><a class="btn" href="#" id="remove">Удалить</a></li>
+                    <li>
+                        <a class="btn" href="#" id="writeFile">Сохранить</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#" id="readFile">Загрузить</a>
+                    </li>
+                    <div class="toggleBlock">                        
+                        <li>
+                            <span class="helpTxt">введите коэффициенты sx, sy</span>
+                            <input id="inputScaleSX" type="text" size="25" value="">
+                            <input id="inputScaleSY" type="text" size="25" value="">
+                        </li>
+                        <li>
+                            <a class="btn" href="#" id="scale">Масштаб</a>
+                        </li>                        
+                        <li>
+                            <span class="helpTxt">введите значение от 0 до 360</span>
+                            <input id="inputRotate" type="text" value="">
+                        </li>
+                        <li>
+                            <a class="btn" href="#" id="rotate">Поворот</a>
+                        </li>                       
+                        <li>
+                            <span class="helpTxt">введите X и Y</span><input id="inputTranslateX" type="text" size="25" value="">
+                            <input id="inputTranslateY" type="text" size="25" value="">
+                        </li>
+                         <li>
+                            <a class="btn" href="#" id="translate">Перенос</a>
+                        </li>                        
+                        <li>
+                            <span class="helpTxt">Выберите цвет границы</span>
+                            <select id="selectColorStroke" type="text" value="">
+                                <option value="#000">Черный</option>
+                                <option value="#0025ff">Синий</option>
+                                <option value="#5fab7b">Зеленый</option>
+                            <select>
+                        </li>
+                        <li>
+                            <span class="helpTxt">Выберите цвет заливки</span>
+                            <select id="selectColorFill" type="text" value="">
+                                <option value="#fff">Белый</option>
+                                <option value="#cfb53b">Желтый</option>
+                                <option value="#ebb0df">Сиреневый</option>
+                            <select>
+                        </li>
+                        <li>
+                            <a class="btn" href="#" id="setColor">Изменить цвет</a>
+                        </li>
+                    <div>
+                </ul>
+            </div>
+            <div class="grid_9">
+                <div class="editorBody" id="canv" style="float: none"></div>
+                <div id="console" class="console">
+                    <div class="input"></div>
+                    <ul class="output"></ul>
+                </div>
+            </div>
+    </div>    
+</body>
+</html>
